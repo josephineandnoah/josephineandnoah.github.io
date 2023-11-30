@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `Wedding Guest Site`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://josephineandnoah.github.io`,
   },
   plugins: [],
+  pathPrefix: "/josephineandnoah.github.io",
 }
