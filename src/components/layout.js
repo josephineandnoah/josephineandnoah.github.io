@@ -1,11 +1,20 @@
 import React from "react"
-
 import NavBar from "./nav-bar"
+import {
+  container,
+  heading,
+} from './layout.module.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ pageTitle, children }) => (
   <>
-    <NavBar />
-    {children}
+    <div className={container}>
+
+      <NavBar />
+      <main>
+        <h1 className={heading}>{pageTitle}</h1>
+        {children}
+      </main>
+    </div>
   </>
 )
 

@@ -6,6 +6,9 @@ module.exports = {
     title: `Wedding Guest Site`,
     siteUrl: `https://josephineandnoah.github.io`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
   pathPrefix: "/josephineandnoah.github.io",
 }

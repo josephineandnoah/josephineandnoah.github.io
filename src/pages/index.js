@@ -6,13 +6,16 @@ import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout >
       <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
       <p>
         {isLoggedIn() ? (
           <>
             You are logged in, so check your{" "}
             <Link to="/guest/profile">profile</Link>
+            <p><Link to="/about">About</Link> </p>
+            <p>I'm making this by following the Gatsby Tutorial.</p>
+
           </>
         ) : (
           <>
@@ -24,3 +27,5 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const Head = () => <title>Home Page</title>
