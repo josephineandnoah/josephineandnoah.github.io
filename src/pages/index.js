@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { getUser, isLoggedIn } from "../services/auth"
-
+import Seo from '../components/seo'
 import Layout from "../components/layout"
 
 export default function Home() {
@@ -28,4 +28,4 @@ export default function Home() {
   )
 }
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <Seo title="Home Page" />

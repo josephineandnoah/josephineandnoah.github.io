@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
 
 
 const AboutPage = () => {
@@ -21,6 +22,6 @@ const AboutPage = () => {
     )
 }
 
-export const Head = () => <title>About Me</title>
+export const Head = () => <Seo title="About" />
 
 export default AboutPage

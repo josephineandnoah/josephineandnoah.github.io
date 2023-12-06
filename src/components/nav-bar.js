@@ -8,12 +8,6 @@ import {
 } from './layout.module.css'
 
 export default function NavBar() {
-  let greetingMessage = ""
-  if (isLoggedIn()) {
-    greetingMessage = `Hello ${getUser().name}`
-  } else {
-    greetingMessage = "You are not logged in"
-  }
   return (
     <div
       style={{
@@ -23,7 +17,6 @@ export default function NavBar() {
         borderBottom: "1px solid #d1c1e0",
       }}
     >
-      <span>{greetingMessage}</span>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -49,6 +42,14 @@ export default function NavBar() {
           ) : null}
 
           {isLoggedIn() ? (
+            <li className={navLinkItem}>
+              <Link to="/updates" className={navLinkText}>
+                Updates {` `}
+              </Link>
+            </li>
+          ) : null}
+
+          {isLoggedIn() ? (
             <a
               href="/"
               onClick={event => {
@@ -60,8 +61,13 @@ export default function NavBar() {
                 Logout
               </li>
             </a>
-          ) : null}
-
+          ) : (
+            <li className={navLinkItem}>
+              <Link to="/guest/login" className={navLinkText}>
+                Login {` `}
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </div>

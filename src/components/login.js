@@ -35,7 +35,7 @@ class Login extends React.Component {
           }}
         >
           <label>
-            Password
+            Password {` `}
             <input
               type="password"
               name="password"
