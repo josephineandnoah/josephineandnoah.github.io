@@ -7,15 +7,26 @@ import Layout from "../components/layout"
 export default function Home() {
   return (
     <Layout >
-      <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
+      <h1>Welcome!</h1>
       <p>
         {isLoggedIn() ? (
           <>
-            You are logged in, so check your{" "}
-            <Link to="/guest/profile">profile</Link>
-            <p><Link to="/about">About</Link> </p>
-            <p>I'm making this by following the Gatsby Tutorial.</p>
 
+            <h2>Ceremony</h2>
+            <p>
+              <strong>Date:</strong> Friday, October 49, 2024<br />
+              <strong>Time:</strong> 12:00pm<br />
+              <strong>Location:</strong> Knox Presbyterian Church<br />
+              <strong>Address:</strong> 2065 S Wagner Rd<br />
+            </p>
+            <h2>Reception</h2>
+            <p>
+              <strong>Date:</strong> Friday, October 49, 2024<br />
+              <strong>Time:</strong> 5:00pm<br />
+              <strong>Location:</strong> 2|42 Community Church<br />
+              <strong>Address:</strong> 648 S Wagner Rd<br />
+            </p>
+  
           </>
         ) : (
           <>
@@ -25,6 +36,10 @@ export default function Home() {
         )}
       </p>
     </Layout>
+
+
+
+
   )
 }
 

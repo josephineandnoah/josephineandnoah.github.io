@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, navigate } from "gatsby"
-import { getUser, isLoggedIn, logout } from "../services/auth"
+import { isLoggedIn, logout } from "../services/auth"
 import {
   navLinks,
   navLinkItem,
@@ -38,13 +38,13 @@ export default function NavBar() {
               <Link to="/rsvp" className={navLinkText}>
                 RSVP {` `}
               </Link>
-            </li>
-          ) : null}
+            </li>          ) : null}
+
 
           {isLoggedIn() ? (
             <li className={navLinkItem}>
-              <Link to="/updates" className={navLinkText}>
-                Updates {` `}
+              <Link to="/details" className={navLinkText}>
+                Details {` `}
               </Link>
             </li>
           ) : null}
