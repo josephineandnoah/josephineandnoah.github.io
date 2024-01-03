@@ -1,17 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import { getUser, isLoggedIn } from "../services/auth"
+import {  isLoggedIn } from "../services/auth"
 import Seo from '../components/seo'
 import Layout from "../components/layout"
 
 export default function Home() {
   return (
     <Layout >
-      <h1>Welcome!</h1>
       <p>
         {isLoggedIn() ? (
           <>
-
             <h2>Ceremony</h2>
             <p>
               <strong>Date:</strong> Friday, October 49, 2024<br />
@@ -36,10 +34,6 @@ export default function Home() {
         )}
       </p>
     </Layout>
-
-
-
-
   )
 }
 
