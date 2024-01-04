@@ -16,7 +16,8 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `)
+  `
+  )
 
   return (
     <div className={container}>

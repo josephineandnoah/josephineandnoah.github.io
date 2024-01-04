@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 const DetailPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+
       {children}
     </Layout>
   )
@@ -17,7 +17,7 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
-        date(formatString: "MMMM D, YYYY")
+
       }
     }
   }

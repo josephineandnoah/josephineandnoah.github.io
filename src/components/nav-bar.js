@@ -32,6 +32,14 @@ export default function NavBar() {
               About {` `}
             </Link>
           </li>
+          
+          {isLoggedIn() ? (
+            <li className={navLinkItem}>
+              <Link to="/details" className={navLinkText}>
+                Details {` `}
+              </Link>
+            </li>
+          ) : null}
 
           {isLoggedIn() ? (
             <li className={navLinkItem}>
@@ -41,13 +49,7 @@ export default function NavBar() {
             </li>          ) : null}
 
 
-          {isLoggedIn() ? (
-            <li className={navLinkItem}>
-              <Link to="/details" className={navLinkText}>
-                Details {` `}
-              </Link>
-            </li>
-          ) : null}
+
 
           {isLoggedIn() ? (
             <a
