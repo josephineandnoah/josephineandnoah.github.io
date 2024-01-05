@@ -1,6 +1,8 @@
 import React from "react"
 import NavBar from "./nav-bar"
 import { useStaticQuery, graphql } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import {
   container,
   heading,
@@ -21,7 +23,14 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title} </header>
+      <header className={siteTitle}>
+
+        <StaticImage
+          src="../images/header_image.jpeg"
+        />
+        {data.site.siteMetadata.title}
+      </header>
+
       <NavBar />
       <main>
         <h1 className={heading}>{pageTitle}</h1>

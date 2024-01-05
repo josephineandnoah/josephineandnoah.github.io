@@ -10,7 +10,7 @@ export default function Home() {
       <p>
         {isLoggedIn() ? (
           <>
-            <h2>Ceremony</h2>
+            <h2 >Ceremony</h2>
             <p>
               <strong>Date:</strong> Friday, October 49, 2024<br />
               <strong>Time:</strong> 12:00pm<br />
