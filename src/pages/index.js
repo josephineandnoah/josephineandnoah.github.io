@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import {  isLoggedIn } from "../services/auth"
+import { isLoggedIn } from "../services/auth"
+import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import Layout from "../components/layout"
 
@@ -10,21 +11,24 @@ export default function Home() {
       <p>
         {isLoggedIn() ? (
           <>
-            <h2 >Ceremony</h2>
+
+            <h1 >Ceremony</h1>
             <p>
               <strong>Date:</strong> Friday, October 49, 2024<br />
               <strong>Time:</strong> 12:00pm<br />
               <strong>Location:</strong> Knox Presbyterian Church<br />
               <strong>Address:</strong> 2065 S Wagner Rd<br />
             </p>
-            <h2>Reception</h2>
+            <h1>Reception</h1>
             <p>
               <strong>Date:</strong> Friday, October 49, 2024<br />
               <strong>Time:</strong> 5:00pm<br />
               <strong>Location:</strong> 2|42 Community Church<br />
               <strong>Address:</strong> 648 S Wagner Rd<br />
             </p>
-  
+            <StaticImage
+              src="../images/home_image.jpg"
+            />
           </>
         ) : (
           <>

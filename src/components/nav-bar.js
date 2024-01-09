@@ -21,18 +21,18 @@ export default function NavBar() {
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
-
               Home {` `}
             </Link>
-
           </li>
 
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About {` `}
-            </Link>
-          </li>
-          
+          {isLoggedIn() ? (
+            <li className={navLinkItem}>
+              <Link to="/about" className={navLinkText}>
+                About {` `}
+              </Link>
+            </li>
+          ) : null}
+
           {isLoggedIn() ? (
             <li className={navLinkItem}>
               <Link to="/details" className={navLinkText}>
@@ -46,10 +46,8 @@ export default function NavBar() {
               <Link to="/rsvp" className={navLinkText}>
                 RSVP {` `}
               </Link>
-            </li>          ) : null}
-
-
-
+            </li>
+          ) : null}
 
           {isLoggedIn() ? (
             <a

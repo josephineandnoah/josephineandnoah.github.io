@@ -1,10 +1,6 @@
 import * as React from 'react'
+import { Link } from "gatsby"
 import Layout from '../components/layout'
-// import PrivateRoute from '../components/privateRoute'
-// import RSVPForm from '../components/RSVPForm'
-// import { Router } from "@reach/router"
-// import Login from "../components/login"
-
 import { isLoggedIn } from "../services/auth"
 import RSVPForm from '../components/RSVPForm'
 
@@ -18,7 +14,12 @@ const RSVP = () => {
                         <RSVPForm />
                     </p>
 
-                ) : null}
+                ) : (
+                    <>
+                      You should <Link to="/guest/login">log in</Link> to see restricted
+                      content
+                    </>
+                  )}
             </Layout>
         </main>
     )
