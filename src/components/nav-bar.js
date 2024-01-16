@@ -4,19 +4,13 @@ import { isLoggedIn, logout } from "../services/auth"
 import {
   navLinks,
   navLinkItem,
-  navLinkText
+  navLinkText, 
+  navBar
 } from './layout.module.css'
 
 export default function NavBar() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flex: "1",
-        justifyContent: "space-between",
-        borderBottom: "1px solid #d1c1e0",
-      }}
-    >
+    <div className={navBar} >
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -40,6 +34,14 @@ export default function NavBar() {
               </Link>
             </li>
           ) : null}
+                    
+                    {isLoggedIn() ? (
+            <li className={navLinkItem}>
+              <Link to="/travel" className={navLinkText}>
+                Travel {` `}
+              </Link>
+            </li>
+          ) : null}
 
           {isLoggedIn() ? (
             <li className={navLinkItem}>
@@ -50,12 +52,13 @@ export default function NavBar() {
           ) : null}
 
           {isLoggedIn() ? (
-            <a
+            <a 
               href="/"
               onClick={event => {
                 event.preventDefault()
                 logout(() => navigate(`/guest/login`))
-              }}
+                
+              } }
             >
               <li className={navLinkItem}>
                 Logout

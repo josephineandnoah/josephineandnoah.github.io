@@ -28,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
         <StaticImage
           src="../images/header_image.jpeg"
         />
-        {data.site.siteMetadata.title}
+        {/* {data.site.siteMetadata.title} */}
       </header>
 
       <NavBar />

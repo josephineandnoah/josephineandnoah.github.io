@@ -10,13 +10,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blog`,
-        path: `${__dirname}/details`,
-      }
-    },
+
     "gatsby-plugin-mdx",
   ],
   pathPrefix: "/josephineandnoah.github.io",

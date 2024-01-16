@@ -32,10 +32,7 @@ const AboutPage = () => {
                         </p>
 
 
-                        <StaticImage
-                            alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                            src="../images/home_image.jpg"
-                        />
+
                         <StaticImage
                             src="../images/image_portrait.jpg"
                         />
@@ -43,8 +40,13 @@ const AboutPage = () => {
                             src="../images/image_landscape_1.jpg"
                         />
                         <StaticImage
+                            alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+                            src="../images/home_image.jpg"
+                        />
+                        <StaticImage
                             src="../images/image_portrait_2.jpg"
                         />
+
                     </>
 
                 ) : (
