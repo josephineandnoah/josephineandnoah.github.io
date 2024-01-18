@@ -51,7 +51,7 @@ export default function NavBar() {
             </li>
           ) : null}
 
-          {isLoggedIn() ? (
+          {/* {isLoggedIn() ? (
             <a 
               href="/"
               onClick={event => {
@@ -70,7 +70,7 @@ export default function NavBar() {
                 Login {` `}
               </Link>
             </li>
-          )}
+          )} */}
         </ul>
       </nav>
     </div>

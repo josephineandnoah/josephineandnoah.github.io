@@ -24,7 +24,7 @@ const DetailsPage = () => {
                         <a href="https://pin.it/3B9zRo6" target="_blank" rel="noreferrer">Pinterest Board for Inspiration </a>
 
                         <h2> Phone Policy</h2>
-                        We ask that you refrain from using phones and cameras at the ceremony. <br /> 
+                        We will be having a phone-free ceremony. <br /> 
                         But please feel free to snap and share during the reception!
                         <br />
                         Share your captured moments <a href="https://pin.it/3B9zRo6" target="_blank" rel="noreferrer">here </a>

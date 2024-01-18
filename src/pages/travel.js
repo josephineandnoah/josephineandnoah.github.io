@@ -63,8 +63,9 @@ const TravelPage = () => {
                         <h2>Parking</h2>
                         Ample free parking will be available at both wedding event locations.<p />
 
-                        Parking in Downtown Ann Arbor and U of M campus can be challenging; follow signage to avoid getting ticketed. Metered
-                        parking is free after 6pm and all day on Sunday. Residential streets can be good places to park, but be careful to obey
+                        Parking in Downtown Ann Arbor and U of M campus can be challenging; follow signage to avoid getting ticketed. <br />
+                        Metered parking is free after 6pm and all day on Sunday. <br />
+                        Residential streets can be good places to park, but be sure to obey
                         local regulations.
                         <p />
 
