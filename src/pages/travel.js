@@ -34,8 +34,8 @@ const TravelPage = () => {
                         <br />Blue Buses are free to all students and guests on campus. Check the website for route details.
 
                         <p />
-                        <strong>Rideshare:</strong> <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer">Lyft</a> |{' '}
-                        <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer">Uber</a>
+                        <strong>Rideshare: <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer">Lyft</a> |{' '}
+                        <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer">Uber</a> </strong>
                         <br />Rideshare fares to and from the airport can be costly, so be sure to check beforehand to determine what option is right for you.
 
 
