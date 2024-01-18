@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from "gatsby"
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { StaticImage } from 'gatsby-plugin-image'
 import { isLoggedIn } from "../services/auth"
 
 
@@ -22,10 +23,24 @@ const DetailsPage = () => {
                         While gifts are not expected, we'd be delighted by unique art pieces or home decor.<br />
                         <a href="https://pin.it/3B9zRo6" target="_blank" rel="noreferrer">Pinterest Board for Inspiration </a>
 
-                        <h2> Photo Policy</h2>
-                        We will be having a no-phones ceremony.  
+                        <h2> Phone Policy</h2>
+                        We ask that you refrain from using phones and cameras at the ceremony. <br /> 
+                        But please feel free to snap and share during the reception!
+                        <br />
+                        Share your captured moments <a href="https://pin.it/3B9zRo6" target="_blank" rel="noreferrer">here </a>
                         <h2> Wedding Hashtag</h2>
                         #blahblahblah
+
+                        <h2>Contact us</h2>
+                        Join our Slack to volunteer, ask questions, connect with organizers, and engage with fellow guests! <br /> 
+                        Your participation makes our celebration even more special.<br /> 
+                        Click [here] to join the conversation
+                        
+                        <p />
+                        <StaticImage
+                            src="../images/image_landscape_1.jpg"
+                        />
+
                     </>
                 ) : (
                     <>

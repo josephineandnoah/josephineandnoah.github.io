@@ -36,12 +36,13 @@ const TravelPage = () => {
                         <p />
                         <strong>Rideshare:</strong> <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer">Lyft</a> |{' '}
                         <a href="https://www.uber.com/" target="_blank" rel="noopener noreferrer">Uber</a>
-                        <br />Rideshare fares to and from the airport can be expensive.
+                        <br />Rideshare fares to and from the airport can be costly, so be sure to check beforehand to determine what option is right for you.
 
 
 
                         <h2>Accomodations and Things To Do</h2>
                         <iframe
+                            title="Traveller's Guide to Ann Arbor"
                             src="https://www.google.com/maps/d/embed?mid=1tXmqGXNglCsB6A4HEjKU8o6WTI1RDPI&ehbc=2E312F&noprof=1"
                             width="80%"
                             height="300"

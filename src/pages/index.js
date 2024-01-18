@@ -17,20 +17,20 @@ export default function Home() {
               <strong>Date:</strong> Friday, October 49, 2024<br />
               <strong>Time:</strong> 12:00pm<br />
               <strong>Location:</strong> Knox Presbyterian Church<br />
-              <strong>Address:</strong> 2065 S Wagner Rd<br />
-              <i>
+              <strong>Address:</strong> 2065 S Wagner Rd<p />
+
               Welcome and Seating | Ceremony | Recessional | Social Hour 
-              </i>
+
             </p>
             <h1>Reception</h1>
             <p>
               <strong>Date:</strong> Friday, October 49, 2024<br />
               <strong>Time:</strong> 5:00pm<br />
               <strong>Location:</strong> 2|42 Community Church<br />
-              <strong>Address:</strong> 648 S Wagner Rd<br />
-              <i>
-                Cocktail Hour | Dinner and Toasts | Cutting of the Cake | Dance the Night Away!
-              </i>
+              <strong>Address:</strong> 648 S Wagner Rd<p />
+
+                Cocktail Hour | Dinner and Toasts | Dance the Night Away!
+
             
             </p>
             <StaticImage
